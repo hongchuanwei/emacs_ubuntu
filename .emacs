@@ -140,6 +140,8 @@
 (global-linum-mode t)
 (setq linum-format "%4d ")
 
+;; turn off auto indent
+(when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
